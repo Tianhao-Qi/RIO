@@ -732,7 +732,7 @@ class StandardROIHeads(ROIHeads):
                 fields such as `pred_masks` or `pred_keypoints`.
         """
         assert not self.training
-        pdb.set_trace()
+        # pdb.set_trace()
         assert instances[0].has("pred_boxes") and instances[0].has("pred_classes")
 
         instances = self._forward_mask(features, instances)
